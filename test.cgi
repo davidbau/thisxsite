@@ -10,6 +10,8 @@ LOGGING = True
 
 if __name__ == '__main__':
     buf = sys.stdout.buffer
+    buf.write(b'Content-Type: text/html\n')
+    buf.write(b'\n')
 
     with open('choices.txt') as f:
         filename = random.choice(f.readlines()).strip()
