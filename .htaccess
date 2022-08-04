@@ -1,7 +1,3 @@
 Options +ExecCGI
 AddHandler cgi-script cgi
 DirectoryIndex index.cgi
-<FilesMatch "^\..*|\.(txt|md|sh|png)$">
-Order Allow,Deny
-Deny from all
-</FilesMatch>
